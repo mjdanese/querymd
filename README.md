@@ -39,6 +39,7 @@ print(compiled_query)
 ```
 
 #### Example output
+```
 SELECT
   date_trunc('month', sale_date) AS "Sale Month",
   region AS "Sales Region",
@@ -52,3 +53,4 @@ WHERE TRUE AND
   sale_date >= '2023-01-01' AND sale_date < '2023-04-01'
 GROUP BY 1, 2
 ORDER BY 1 DESC, 2
+```
